@@ -1,4 +1,40 @@
 {
-    "main-page.title": "Главная страница",
-    "main-page.subtitle": "Описание"
+	"main-page.title": "Growth",
+
+	"service-component-name": "Solutions",
+	"service-component-counter": "01",
+
+	"tablet-decor-component-img-path": "https://assets-global.website-files.com/62a059f7c3b9147ea6a4afb2/62aaeea5395fe18478b76910_point.svg",
+
+	"learn-more-component-title": "Learn More",
+	"learn-more-component-href": "/",
+
+	"schedule-component-title": "Schedule a Call",
+	"schedule-component-href": "/",
+
+	"landing-page.widget.header.title": "Growth",
+	"landing-page.widget.header.href": "/",
+
+	"landing-page.widget.menu.burger.img.path": "https://assets-global.website-files.com/62a059f7c3b9147ea6a4afb2/62b48192cd21026a38aba88a_burger.svg",
+
+	"landing-page.widget.main.title.first.phrase": "We bring",
+	"landing-page.widget.main.title.second.phrase": "visionary",
+	"landing-page.widget.main.title.third.phrase": "ideas to",
+	"landing-page.widget.main.title.fourth.phrase": "life.",
+	"landing-page.widget.main.description": "A modern, one-stop decentralized agency focused on creating the future",
+
+	"landing-page.widget.about.description": "We are entrepreneurs, engineers, and designers solving hard problems for passionate creators. We believe humans are wired to create, and through genuine collaboration, we can build amazing things. We'd love to work with you, so take a look around, and reach out if you think we'd be a good fit.",
+
+	"landing-page.widget.schedule.call.title.first.phrase": "Your",
+	"landing-page.widget.schedule.call.title.second.phrase": "future,",
+	"landing-page.widget.schedule.call.title.third.phrase": "together.",
+	"landing-page.widget.schedule.call.description.first.phrase": "We'd love to help bring your next idea to life.",
+	"landing-page.widget.schedule.call.description.second.phrase": "Schedule a time with our founders.",
+
+	"landing-page.widget.footer.title": "Growth",
+	"landing-page.widget.footer.href": "/",
+
+	"landing-page.widget.footer.sign.up.first.phrase": "Sign up to",
+	"landing-page.widget.footer.sign.up.second.phrase": "our newsletter",
+	"landing-page.widget.footer.privacy": "Privacy Policy"
 }

@@ -1,0 +1,97 @@
+@import 'constants';
+
+@mixin mediaMaxWidth($width) {
+	@media screen and (max-width: $width) {
+		@content;
+	}
+}
+
+@mixin mediumScreenAndLess {
+	@include mediaMaxWidth($wideScreen - 1px) {
+		@content;
+	}
+}
+
+@mixin smallScreenAndLess {
+	@include mediaMaxWidth($mediumScreen - 1px) {
+		@content;
+	}
+}
+
+@mixin bigTabletAndLess {
+	@include mediaMaxWidth($smallScreen - 1px) {
+		@content;
+	}
+}
+
+@mixin tabletAndLess {
+	@include mediaMaxWidth($bigTabletScreen - 1px) {
+		@content;
+	}
+}
+
+@mixin smallTabletAndLess {
+	@include mediaMaxWidth($tabletScreen - 1px) {
+		@content;
+	}
+}
+
+@mixin phoneAndLess {
+	@include mediaMaxWidth($smallTabletScreen - 1px) {
+		@content;
+	}
+}
+
+@mixin smallPhoneAndLess {
+	@include mediaMaxWidth($phoneScreen - 1px) {
+		@content;
+	}
+}
+
+@media (min-width: 320px) {
+	header,
+	footer,
+	section {
+		padding: 0 16px;
+	}
+}
+
+@media (min-width: 575.98px) {
+	header,
+	footer,
+	section {
+		padding: 0 40px;
+	}
+}
+
+@media (min-width: 767.98px) {
+	header,
+	footer,
+	section {
+		padding: 0 70px;
+	}
+}
+
+@media (min-width: 991.98px) {
+	header,
+	footer,
+	section {
+		padding: 0 100px;
+	}
+}
+
+@media (min-width: 1119.98px) {
+	header,
+	footer,
+	section {
+		padding: 0 120px;
+	}
+}
+
+@media (min-width: 1319.98px) {
+	header,
+	footer,
+	section {
+		padding: 0 140px;
+	}
+}

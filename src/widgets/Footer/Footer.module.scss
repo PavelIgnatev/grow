@@ -1,0 +1,58 @@
+.footer {
+	height: 120px;
+	position: relative;
+}
+
+.footerWrapper {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&:before {
+		position: absolute;
+		content: '';
+		width: 100%;
+		height: 1px;
+		background-color: white;
+		top: 0;
+		left: 0;
+	}
+}
+
+.footerTitle {
+	font-weight: 700;
+	font-size: 2.5rem;
+	height: 100%;
+	width: 440px;
+	display: flex;
+	align-items: center;
+	border-right: 1px solid white;
+
+	a {
+		text-decoration: none;
+		color: white;
+	}
+}
+
+.footerNavbar {
+	padding-left: 60px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.signUp {
+	padding-left: 50px;
+	font-size: 1.25rem;
+	font-weight: 500;
+}
+
+.privacyText {
+	font-size: 1rem;
+	font-weight: 300;
+	cursor: pointer;
+}

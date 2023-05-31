@@ -1,0 +1,31 @@
+@import 'src/assets/design/colors.scss';
+
+.scheduleCall {
+	height: 750px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.scheduleCallWrapper {
+	text-align: center;
+}
+
+.yourFutureText {
+	line-height: 95px;
+	text-align: center;
+	font-size: 6rem;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+
+.greenText {
+	color: $lightGreen;
+}
+
+.descriptionText {
+	font-weight: 300;
+	font-size: 1.5rem;
+	line-height: 2.375rem;
+	margin-top: 20px;
+}

@@ -1,0 +1,34 @@
+@import 'src/assets/design/colors.scss';
+
+.menu {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	padding-right: 0;
+}
+
+.menuBtn {
+	position: relative;
+	z-index: 2;
+	background-color: $background;
+	border: none;
+	cursor: pointer;
+}
+
+.burger {
+	width: 100%;
+	height: 100%;
+}
+
+.menuWrapper {
+	background: $background;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 1;
+	padding: 100px;
+}
