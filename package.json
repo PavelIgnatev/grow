@@ -1,33 +1,32 @@
 {
-  "name": "grow",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "locale:migrate": "locize migrate --project-id=fd48c972-3b06-46a4-bc6d-96ac8d2fa536 --api-key=e0c82b2f-fea5-4c73-ab48-3bd0a9c912d2  --path=./public/locales",
-    "locale:download": "locize download --project-id=fd48c972-3b06-46a4-bc6d-96ac8d2fa536 --ver=latest --clean=true --path=./public/locales",
-    "locale:sync": "locize sync --project-id=fd48c972-3b06-46a4-bc6d-96ac8d2fa536 --api-key=b7da46c6-1349-485b-8abf-5ac1f2589991 --ver=latest --path=./public/locales --dry=true"
-  },
-  "dependencies": {
-    "@types/node": "18.16.3",
-    "@types/react": "18.2.4",
-    "@types/react-dom": "18.2.3",
-    "eslint": "8.39.0",
-    "eslint-config-next": "13.3.4",
-    "google-translate-api": "^2.3.0",
-    "i18next": "^22.5.0",
-    "locize-cli": "^7.14.0",
-    "next": "13.3.4",
-    "next-i18next": "^13.2.2",
-    "next-intl": "^2.13.2",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-i18next": "^12.3.1",
-    "react-intl": "^6.4.2",
-    "sass": "^1.62.1",
-    "typescript": "5.0.4"
-  }
+	"name": "grow",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"locale:migrate": "locize migrate --project-id=fd48c972-3b06-46a4-bc6d-96ac8d2fa536 --api-key=e0c82b2f-fea5-4c73-ab48-3bd0a9c912d2  --path=./public/locales",
+		"locale:download": "locize download --project-id=fd48c972-3b06-46a4-bc6d-96ac8d2fa536 --ver=latest --clean=true --path=./public/locales",
+		"locale:sync": "locize sync --project-id=fd48c972-3b06-46a4-bc6d-96ac8d2fa536 --api-key=b7da46c6-1349-485b-8abf-5ac1f2589991 --ver=latest --path=./public/locales --dry=true"
+	},
+	"dependencies": {
+		"@types/node": "18.16.3",
+		"@types/react": "18.2.4",
+		"@types/react-dom": "18.2.3",
+		"eslint": "8.39.0",
+		"eslint-config-next": "13.3.4",
+		"google-translate-api": "^2.3.0",
+		"i18next": "^22.5.0",
+		"locize-cli": "^7.14.0",
+		"next": "13.3.4",
+		"next-i18next": "^13.2.2",
+		"next-intl": "^2.13.2",
+		"react": "18.2.0",
+		"react-dom": "18.2.0",
+		"react-intl": "^6.4.2",
+		"sass": "^1.62.1",
+		"typescript": "5.0.4"
+	}
 }

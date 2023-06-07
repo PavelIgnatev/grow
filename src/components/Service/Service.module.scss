@@ -1,3 +1,5 @@
+@import 'src/assets/design/media.scss';
+
 .service {
 	margin-bottom: 25px;
 }
@@ -11,13 +13,22 @@
 .serviceCounter {
 	font-size: 1.5rem;
 	font-weight: 700;
-	line-height: 2.625;
 }
 
 .serviceName {
-	letter-spacing: 1.5px;
 	margin-left: 125px;
 	font-size: 7.5rem;
 	font-weight: 700;
 	text-decoration: none;
+
+	@include mediumScreen {
+		font-size: 4rem;
+		margin-left: 100px;
+	}
+	@include smallScreen {
+		font-size: 2.5rem;
+	}
+	@include phoneScreen {
+		margin-left: 30px;
+	}
 }

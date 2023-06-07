@@ -6,7 +6,11 @@ const Tablet = () => {
 
 	return (
 		<div className={classes.tablet}>
-			<img src={t('tablet-decor-component-img-path')} alt='about' />
+			<img
+				src={t('tablet-decor-component-img-path')}
+				alt='about'
+				className={classes.tabletImg}
+			/>
 		</div>
 	)
 }

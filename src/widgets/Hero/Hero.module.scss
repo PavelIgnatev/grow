@@ -1,0 +1,237 @@
+@import 'src/assets/design/colors.scss';
+@import 'src/assets/design/media.scss';
+
+.hero {
+	height: 710px;
+	position: relative;
+	@include largeScreen {
+		height: 1155px;
+	}
+	@include mediumScreen {
+		height: 1000px;
+	}
+	@include smallScreen {
+		height: 680px;
+	}
+}
+
+.heroWrapper {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&:after {
+		position: absolute;
+		content: '';
+		width: 100%;
+		height: 1px;
+		background-color: white;
+		bottom: 0;
+		left: 0;
+	}
+
+	@include largeScreen {
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: stretch;
+	}
+	@include mediumScreen {
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: stretch;
+	}
+	@include smallScreen {
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: stretch;
+	}
+}
+
+@mixin heroTitleMixin {
+	text-align: center;
+	font-size: 3.5rem;
+	grid-template-rows: 135px 75px 290px;
+	letter-spacing: 2px;
+}
+
+.heroTitle {
+	display: grid;
+	grid-template-rows: 170px 80px 135px;
+	grid-gap: 0px;
+
+	font-size: 3.9rem;
+	line-height: 0;
+
+	letter-spacing: 2px;
+
+	p {
+		font-size: 1.5rem;
+		font-weight: 300;
+		letter-spacing: 0px;
+		@include largeScreen {
+			display: block;
+			position: absolute;
+			top: 70%;
+		}
+		@include mediumScreen {
+			display: block;
+			position: absolute;
+			top: 65%;
+			text-align: start;
+			width: 220px;
+			line-height: 1.5;
+		}
+		@include smallScreen {
+			display: block;
+			position: absolute;
+			top: 53%;
+			width: 120px;
+		}
+		@include phoneScreen {
+			font-size: 1.1rem;
+			line-height: 1.875;
+			display: block;
+			position: absolute;
+			top: 53%;
+		}
+	}
+
+	.greenText {
+		color: $lightGreen;
+	}
+
+	@include largeScreen {
+		margin-top: 7.5rem;
+		@include heroTitleMixin;
+	}
+
+	@include mediumScreen {
+		margin-top: 6rem;
+		@include heroTitleMixin;
+	}
+
+	@include smallScreen {
+		margin-top: 4rem;
+		text-align: center;
+		font-size: 2.2rem;
+		grid-template-rows: 100px 27px 185px;
+	}
+}
+
+.heroTitleSecondPhrase {
+	display: flex;
+	align-items: center;
+
+	.heroTitleLine {
+		width: 165px;
+		height: 10px;
+		background-color: white;
+		margin-right: 26px;
+	}
+
+	@include largeScreen {
+		.heroTitleLine {
+			display: none;
+		}
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	@include mediumScreen {
+		.heroTitleLine {
+			display: none;
+		}
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	@include smallScreen {
+		.heroTitleLine {
+			display: none;
+		}
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.heroTitleLastPhrase {
+	display: flex;
+
+	.heroTitleFourthPhrase {
+		margin-left: 30px;
+	}
+
+	@include largeScreen {
+		flex-direction: column;
+
+		position: relative;
+
+		.heroTitleFourthPhrase {
+			margin-left: 0;
+			position: absolute;
+			top: 63%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+	@include mediumScreen {
+		flex-direction: column;
+
+		position: relative;
+
+		.heroTitleFourthPhrase {
+			margin-left: 0;
+			position: absolute;
+			top: 63%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+	@include smallScreen {
+		flex-direction: column;
+
+		position: relative;
+
+		.heroTitleFourthPhrase {
+			position: absolute;
+			top: 63%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+}
+
+.heroImg {
+	@include largeScreen {
+		margin-bottom: 7.5rem;
+		display: flex;
+		position: absolute;
+		top: 70%;
+		right: 0%;
+		margin-right: 100px;
+	}
+	@include mediumScreen {
+		margin-bottom: 6rem;
+		display: flex;
+
+		position: absolute;
+		top: 68%;
+		right: 0%;
+		margin-right: 60px;
+	}
+	@include smallScreen {
+		margin-bottom: 4rem;
+		display: flex;
+
+		position: absolute;
+		top: 68%;
+		right: 0%;
+		margin-right: 40px;
+	}
+}

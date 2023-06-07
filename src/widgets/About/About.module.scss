@@ -1,6 +1,22 @@
+@import 'src/assets/design/media.scss';
+
 .about {
 	height: 560px;
 	position: relative;
+	padding-right: 0px;
+	@include largeScreen {
+		padding-left: 20px;
+	}
+	@include mediumScreen {
+		min-height: 1035px;
+		padding-left: 0;
+	}
+	@include smallScreen {
+		min-height: 811px;
+	}
+	@include phoneScreen {
+		min-height: 735px;
+	}
 }
 
 .aboutWrapper {
@@ -28,24 +44,78 @@
 		bottom: 0;
 		left: 0;
 	}
+
+	@include mediumScreen {
+		flex-direction: column;
+	}
+	@include smallScreen {
+		flex-direction: column;
+	}
 }
 
 .aboutTitle {
 	position: relative;
 	display: flex;
 	justify-content: space-between;
+
+	@include mediumScreen {
+		height: 470px;
+		width: 100%;
+
+		flex-direction: column;
+		justify-content: start;
+		align-items: start;
+		margin-left: auto;
+		margin-right: auto;
+
+		display: flex;
+
+		border-bottom: 1px solid white;
+	}
+	@include mediumScreen {
+		height: auto;
+		padding-bottom: 64px;
+	}
+	@include smallScreen {
+		height: auto;
+	}
+	@include phoneScreen {
+		height: auto;
+	}
 }
 
 .aboutText {
 	max-width: 575px;
-	padding-left: 160px;
+	margin-left: 159px;
 	padding-right: 85px;
+
+	@include largeScreen {
+		margin-left: 89px;
+		padding-right: 30px;
+	}
+	@include mediumScreen {
+		margin-left: 130px;
+	}
+
+	@include phoneScreen {
+		margin-left: 119px;
+		padding-right: 30px;
+	}
 
 	p {
 		letter-spacing: 0;
 		font-size: 1.5rem;
 		font-weight: 300;
 		line-height: 1.5;
+		@include transitionalScreen {
+			font-size: 1.2rem;
+		}
+		@include mediumScreen {
+			margin-top: 64px;
+		}
+		@include phoneScreen {
+			font-size: 1rem;
+		}
 	}
 }
 
@@ -53,5 +123,19 @@
 	height: 100%;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	border-left: 1px solid white;
+	@include mediumScreen {
+		min-height: 560px;
+		width: 100%;
+		border-left: none;
+	}
+	@include smallScreen {
+		min-height: 312px;
+		width: 100%;
+	}
+	@include phoneScreen {
+		min-height: 312px;
+		width: 100%;
+	}
 }

@@ -3,3 +3,7 @@
 @import 'constants';
 @import 'media';
 @import 'fonts';
+
+body {
+	background-color: $background;
+}

@@ -1,7 +1,7 @@
 import About from '@/widgets/About/About'
 import Footer from '@/widgets/Footer/Footer'
 import Header from '@/widgets/Header/Header'
-import Main from '@/widgets/Main/Main'
+import Hero from '@/widgets/Hero/Hero'
 import Marquee from '@/widgets/Marquee/Marquee'
 import ScheduleCall from '@/widgets/ScheduleCall/ScheduleCall'
 import Services from '@/widgets/Services/Services'
@@ -18,7 +18,7 @@ export async function getStaticProps({ locale }: { locale: string }) {
 	}
 }
 
-export default function MainFunction() {
+export default function Main() {
 	const { t } = useTranslation('index')
 
 	return (
@@ -27,7 +27,7 @@ export default function MainFunction() {
 				<title>{t('main-page.title')}</title>
 			</Head>
 			<Header />
-			<Main />
+			<Hero />
 			<Marquee />
 			<About />
 			<Services />

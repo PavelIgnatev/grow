@@ -1,4 +1,10 @@
+@import 'src/assets/design/media.scss';
+
 .tablet {
 	position: absolute;
 	top: 20px;
+	@include mediumScreen {
+		left: 30px;
+		top: 70px;
+	}
 }

@@ -1,6 +1,11 @@
+@import 'src/assets/design/media.scss';
+
 .footer {
 	height: 120px;
 	position: relative;
+	@include mediumScreen {
+		height: 170px;
+	}
 }
 
 .footerWrapper {
@@ -19,6 +24,10 @@
 		top: 0;
 		left: 0;
 	}
+	@include mediumScreen {
+		flex-direction: column;
+		justify-content: center;
+	}
 }
 
 .footerTitle {
@@ -34,6 +43,15 @@
 		text-decoration: none;
 		color: white;
 	}
+
+	@include mediumScreen {
+		margin-top: -10px;
+		justify-content: center;
+		border: none;
+	}
+	@include smallScreen {
+		font-size: 2rem;
+	}
 }
 
 .footerNavbar {
@@ -43,16 +61,37 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
+	@include mediumScreen {
+		margin-top: -50px;
+		text-align: center;
+		padding: 0;
+		flex-direction: column;
+		justify-content: center;
+	}
 }
 
 .signUp {
 	padding-left: 50px;
 	font-size: 1.25rem;
 	font-weight: 500;
+	@include transitionalScreen {
+		padding-left: 0px;
+	}
+	@include mediumScreen {
+		padding-left: 0px;
+		margin-bottom: 10px;
+	}
+	@include smallScreen {
+		font-size: 1rem;
+	}
 }
 
 .privacyText {
 	font-size: 1rem;
 	font-weight: 300;
 	cursor: pointer;
+	@include smallScreen {
+		font-size: 0.8rem;
+	}
 }
